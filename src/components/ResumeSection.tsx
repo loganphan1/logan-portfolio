@@ -1,4 +1,6 @@
-const resumePath = '/resume/Logan_Phan_Resume.pdf'
+const resumePath = `${import.meta.env.BASE_URL}resume/Logan_Phan_Resume.pdf`
+const resumePreviewPath =
+  `${import.meta.env.BASE_URL}resume/Logan_Phan_Resume_preview.png`
 
 export function ResumeSection() {
   return (
@@ -28,7 +30,7 @@ export function ResumeSection() {
           aria-label="Open Logan Phan’s résumé in a new tab"
         >
           <img
-            src="/resume/Logan_Phan_Resume_preview.png"
+            src={resumePreviewPath}
             alt="Preview of Logan Phan’s one-page résumé"
           />
           <span>PDF · 1 page</span>
