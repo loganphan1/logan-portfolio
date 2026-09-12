@@ -52,13 +52,44 @@ export const menuItems = [
 
 export type MenuItem = (typeof menuItems)[number]
 
-export const featuredProjects = [
+type ProjectLinks = {
+  repository?: string
+  demo?: string
+}
+
+export type FeaturedProject = {
+  id: string
+  title: string
+  summary: string
+  technologies: readonly string[]
+  mission: string
+  role: string
+  approach: readonly string[]
+  status: string
+  links: ProjectLinks
+}
+
+export const featuredProjects: readonly FeaturedProject[] = [
   {
     id: 'personal-finance-dashboard',
     title: 'Personal Finance Dashboard',
     summary:
       'A dashboard that collects transactions, categorizes spending, and surfaces anomaly alerts.',
     technologies: ['FastAPI', 'PostgreSQL', 'Plaid', 'Docker'],
+    mission:
+      'Turn raw financial transaction data into a useful view of spending patterns and unusual activity.',
+    role: 'Full-stack developer',
+    approach: [
+      'Integrated Plaid with a Python and FastAPI service to collect transactions and categorize spending.',
+      'Designed PostgreSQL data models and JWT-authenticated REST endpoints for secure data ingestion and delivery.',
+      'Containerized local development and testing with Docker.',
+    ],
+    status:
+      'In development, with the transaction ingestion, categorization, and anomaly-alert foundation established.',
+    links: {
+      repository: 'https://github.com/loganphan1/finance-app/tree/APIRouter',
+      demo: '',
+    },
   },
   {
     id: 'preventative-care-planner',
@@ -66,6 +97,20 @@ export const featuredProjects = [
     summary:
       'A cross-platform app that generates personalized preventative-care guidance and organizes it in a timeline.',
     technologies: ['React Native', 'TypeScript', 'Supabase'],
+    mission:
+      'Make personalized preventative-care recommendations easier to understand and follow over time.',
+    role: 'Team lead and mobile developer',
+    approach: [
+      'Led a four-person Agile team through planning, implementation, and delivery of the cross-platform application.',
+      'Built a TypeScript rule-based engine that generated recommendations from structured user input.',
+      'Implemented Supabase authentication and a dynamic timeline for individualized care guidance.',
+    ],
+    status:
+      'Delivered as a four-month team project with its recommendation engine, authentication, and timeline working together.',
+    links: {
+      repository: '',
+      demo: '',
+    },
   },
   {
     id: 'portable-cyberdeck',
@@ -73,8 +118,22 @@ export const featuredProjects = [
     summary:
       'A portable Linux terminal environment for coding on the go and local music playback.',
     technologies: ['Linux', 'Bash', 'CLI'],
+    mission:
+      'Create a portable, self-contained Linux environment for development and offline music playback.',
+    role: 'Independent builder',
+    approach: [
+      'Configured Linux and Bash workflows around a keyboard-driven command-line interface.',
+      'Combined local development tools and media playback in one portable environment.',
+      'Kept the system focused on offline access, portability, and a minimal interaction model.',
+    ],
+    status:
+      'An evolving personal build; hardware photos and deeper technical documentation will be added later.',
+    links: {
+      repository: '',
+      demo: '',
+    },
   },
-] as const
+]
 
 export const about = {
   body:
