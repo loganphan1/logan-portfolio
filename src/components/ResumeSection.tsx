@@ -14,10 +14,10 @@ export function ResumeSection() {
       <header className="resume-section__header" id="resume">
         <span className="resume-section__eyebrow">One-page overview</span>
         <span className="resume-section__number" aria-hidden="true">
-          06
+          05
         </span>
         <h2 className="resume-section__title" id="resume-title">
-          Résumé
+          Resume
         </h2>
       </header>
 
@@ -27,17 +27,17 @@ export function ResumeSection() {
           href={resumePath}
           target="_blank"
           rel="noreferrer"
-          aria-label="Open Logan Phan’s résumé in a new tab"
+          aria-label="Open Logan Phan’s resume in a new tab"
         >
           <img
             src={resumePreviewPath}
-            alt="Preview of Logan Phan’s one-page résumé"
+            alt="Preview of Logan Phan’s one-page resume"
           />
           <span>PDF · 1 page</span>
         </a>
 
         <div className="resume-actions">
-          <p className="resume-actions__label">Software engineering résumé</p>
+          <p className="resume-actions__label">Software engineering resume</p>
           <h3>Logan Phan</h3>
           <p className="resume-actions__contents">
             Education / Experience / Projects / Leadership / Skills
@@ -45,7 +45,7 @@ export function ResumeSection() {
 
           <div className="resume-actions__links">
             <a href={resumePath} target="_blank" rel="noreferrer">
-              View résumé <span aria-hidden="true">↗</span>
+              View resume <span aria-hidden="true">↗</span>
             </a>
             <a href={resumePath} download="Logan_Phan_Resume.pdf">
               Download PDF <span aria-hidden="true">↓</span>

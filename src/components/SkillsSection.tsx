@@ -12,7 +12,7 @@ export function SkillsSection() {
       <header className="skills-section__header" id="skills">
         <span className="skills-section__eyebrow">Technical toolkit</span>
         <span className="skills-section__number" aria-hidden="true">
-          05
+          04
         </span>
         <h2 className="skills-section__title" id="skills-title">
           Skills

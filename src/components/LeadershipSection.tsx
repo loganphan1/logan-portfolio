@@ -12,7 +12,7 @@ export function LeadershipSection() {
       <header className="leadership-section__header" id="leadership">
         <span className="leadership-section__eyebrow">Community impact</span>
         <span className="leadership-section__number" aria-hidden="true">
-          04
+          03
         </span>
         <h2 className="leadership-section__title" id="leadership-title">
           Leadership

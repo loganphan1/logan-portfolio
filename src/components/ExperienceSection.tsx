@@ -19,7 +19,7 @@ export function ExperienceSection() {
       <header className="experience-section__header" id="experience">
         <span className="experience-section__eyebrow">Work record</span>
         <span className="experience-section__number" aria-hidden="true">
-          03
+          02
         </span>
         <h2 className="experience-section__title" id="experience-title">
           Experience

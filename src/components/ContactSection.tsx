@@ -12,7 +12,7 @@ export function ContactSection() {
       <header className="contact-section__header" id="connect">
         <span className="contact-section__eyebrow">Open to opportunities</span>
         <span className="contact-section__number" aria-hidden="true">
-          07
+          06
         </span>
         <h2 className="contact-section__title" id="contact-title">
           Let’s talk.

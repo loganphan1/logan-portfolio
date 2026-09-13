@@ -1,8 +1,15 @@
 export const introduction = {
   name: 'Logan Phan',
   role: 'Software Engineer',
-  blurb:
-    'Computer Science student at San Diego State University focused on building reliable, useful software.',
+  summary:
+    'Computer Science student at San Diego State University building reliable full-stack and mobile software.',
+  target: 'Software engineering internship opportunities',
+  coreSkills: ['TypeScript', 'React', 'Python', 'FastAPI', 'PostgreSQL'],
+  education: {
+    school: 'San Diego State University',
+    degree: 'B.S. Computer Science',
+    detail: 'Finance minor / May 2028',
+  },
 } as const
 
 export const menuItems = [
@@ -11,12 +18,6 @@ export const menuItems = [
     label: 'Projects',
     detail: 'Selected software projects and technical work.',
     action: 'View work',
-  },
-  {
-    id: 'about',
-    label: 'About Me',
-    detail: 'A short introduction to who I am and what I’m working toward.',
-    action: 'Meet Logan',
   },
   {
     id: 'experience',
@@ -38,9 +39,9 @@ export const menuItems = [
   },
   {
     id: 'resume',
-    label: 'Résumé',
+    label: 'Resume',
     detail: 'Education, experience, selected projects, and technical skills.',
-    action: 'View résumé',
+    action: 'View resume',
   },
   {
     id: 'connect',
