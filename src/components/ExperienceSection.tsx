@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { experiences, type Experience } from '../content/portfolio'
 
 const initialExperience =
-  experiences.find((experience) => experience.id === 'world-computing') ??
+  experiences.find((experience) => experience.id === 'tend-lab') ??
   experiences[0]
 
 export function ExperienceSection() {
